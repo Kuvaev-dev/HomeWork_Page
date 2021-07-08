@@ -1,0 +1,142 @@
+$color_white: #CECECE
+$color_blue: #6B7BE1
+$color_green: #6BE177
+$color_red: #E16B6B
+$color_black: #030101
+$color_main: #fff
+
+.header
+   background-color: $color_blue  
+   padding-top: 10px
+   padding-bottom: 15px
+   padding-left: 20px
+   padding-right: 20px
+
+   .header_img
+      max-width: 50px
+      max-height: 50px
+      background-color: $color_blue 
+   .header_txt
+      margin-left: 10px
+      margin-right: 10px
+      color: $color_white
+.top
+   margin-left: 5%
+   margin-right: 5%
+   .top_header
+      margin-left: 45%
+      font-size: 30px
+      font: bold
+      color: $color_black
+
+   .colors
+      margin-top: -6%
+      .colors_item
+         display: flex
+         flex-direction: row
+         flex-wrap: nowrap
+         justify-content: flex-end
+         align-items: stretch
+
+         .colors_item_txt
+            margin-right: 5px
+            font-size: 20px
+
+         .colors_item_circle                   
+            width: 20px
+            height: 20px
+            border-radius: 44px
+            border-width: 1px
+            border-style: solid
+            border-color: $color_black
+.lesson_name
+   font-size: 30px
+   margin-left: 25px
+   font: bold
+%home_work_content
+   margin-left: 15px
+   margin-bottom: 10px
+   margin-top: 10px
+%home_work_item
+   max-width: 300px
+   min-width: 300px
+   padding-top: 7px
+   padding-bottom: 7px
+   margin-left: 25px
+   margin-top: 10px
+   
+
+.home_work_blocks
+   display: flex
+   flex-direction: row
+   flex-wrap: wrap
+   justify-content: start
+   align-items: baseline
+   .home_work_current  
+      @extend %home_work_item
+      background-color: $color_white
+      
+   .home_work_txt
+      @extend %home_work_content
+   .home_work_date
+      @extend %home_work_content
+
+.home_work_btn_browse
+   @extend %home_work_content
+   max-width: 250px
+   min-width: 250px
+   padding-right:5px
+   border-radius: 20px
+   border-width: 1px
+   border-style: solid
+   border-color: $color_black
+   background-color: $color_main
+   input
+      border-radius: 20px
+      border-width: 0px
+      border-style: solid
+      border-color: $color_main
+         
+.home_work_btn_is_remove
+   @extend %home_work_content
+   button
+      background-color: $color_blue         
+      border-width: 1px
+      border-style: solid
+      border-color: $color_main
+      color: $color_main
+      max-width: 125px
+      min-width: 125px
+      max-height: 30px
+      min-height: 30px
+
+.home_work_under_review 
+   @extend %home_work_item
+   color: $color_main
+   background-color: $color_blue
+   
+            
+.home_work_overdue
+   @extend %home_work_item
+   background-color: $color_red
+.home_work_reviewed
+   @extend %home_work_item
+   background-color: $color_green
+   button
+      background-color: $color_green
+
+#avatar
+   float: right
+#white
+   background-color: $color_white
+#green
+   background-color: $color_green
+#blue
+   background-color: $color_blue
+#red
+   background-color: $color_red
+
+
+
+	
+   
